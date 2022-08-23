@@ -1,0 +1,40 @@
+header{
+
+    background-color: red;
+    margin-bottom: 150px;
+    padding: 10px 0 10px 250px;
+}
+body{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    padding-right: 30px;
+}
+a:hover{
+    color: white;
+}
+
+.feed{
+margin-left: 300px;
+}
+
+.article{
+    width: 800px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    padding: 10px
+}
