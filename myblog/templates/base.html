@@ -17,11 +17,16 @@
             </ul>
 
     </header>
-    <section class="feed">
-        {% block content %}
+    <main>
+        <div class="feed">
+            <section class="articles">
+                {% block content %}
 
-        {% endblock %}
-    </section>
+                {% endblock %}
+            </section>
+        </div>
+    </main>
+
 
 </body>
 </html>

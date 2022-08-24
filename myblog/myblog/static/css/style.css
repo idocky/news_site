@@ -1,11 +1,15 @@
+body{
+    margin: 0;
+}
 header{
 
-    background-color: red;
+    background: red;
     margin-bottom: 150px;
     padding: 10px 0 10px 250px;
 }
-body{
-    margin: 0;
+
+main{
+    background: black;
 }
 
 ul{
@@ -24,10 +28,10 @@ li{
     padding-right: 30px;
 }
 a:hover{
-    color: white;
+    color: gray;
 }
 
-.feed{
+.articles{
 margin-left: 300px;
 }
 
@@ -36,5 +40,11 @@ margin-left: 300px;
     border-radius: 5px;
     border: 1px solid gray;
     margin-bottom: 20px;
-    padding: 10px
+    padding: 10px;
 }
+
+.feed{
+    articles: 1200px;
+    background-color: white;
+}
+

@@ -5,9 +5,9 @@
 
 {% block content %}
 
-    {% for item in list_post reversed%}
+    {% for item in article_list reversed%}
         <div class="article">
-            <h1>{{item.title}}</h1>
+            <a href="{{item.slug}}/"><h1>{{item.title}}</h1></a>
 
             {{ item.created_at }}<br/>
             <img src="{{ item.picture.url }}" width="500"><br/>
