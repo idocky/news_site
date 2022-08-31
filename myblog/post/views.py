@@ -23,3 +23,4 @@ class ArticleListView(generic.ListView):
 class ArticleDetailView(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
+    context_object_name = 'object'
