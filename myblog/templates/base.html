@@ -8,11 +8,12 @@
 
 </head>
 <body>
+<div class="page">
     <header>
             <ul>
                 <li><img src="{% static 'img/logo.png' %}" height="100px"></li>
                 <li><a href="/">ГЛАВНАЯ</a></li>
-                <li><a href="new_article/">ДОБАВИТЬ СТАТЬЮ</a></li>
+                <li><a href="{% url 'add_article' %}">ДОБАВИТЬ СТАТЬЮ</a></li>
                 <li><a href="#">ГЛАВНАЯ</a></li>
 
             </ul>
@@ -25,8 +26,11 @@
 
                 {% endblock %}
             </section>
+
         </div>
     </main>
+</div>
+
 
 
 
