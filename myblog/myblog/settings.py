@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'post.apps.PostConfig'
+    'post.apps.PostConfig',
+    'crm.apps.CrmConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,15 +77,14 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django-blog',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'blog_db',
         'USER': 'admin',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
+        'PASSWORD': 'admin',
+        'HOST': 'postgres',
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

@@ -10,14 +10,14 @@
 <body>
 <div class="page">
     <header>
-            <ul>
-                <li><img src="{% static 'img/logo.png' %}" height="100px"></li>
-                <li><a href="/">ГЛАВНАЯ</a></li>
-                <li><a href="{% url 'add_article' %}">ДОБАВИТЬ СТАТЬЮ</a></li>
-                <li><a href="#">ГЛАВНАЯ</a></li>
-
-            </ul>
-
+                <ul>
+                    <li><a href="/"><img src="{% static 'img/logo.png' %}" height="100px"></a></li>
+                    <li><a href="/">ГЛАВНАЯ</a></li>
+                    <li><a href="{% url 'add_article' %}">ДОБАВИТЬ СТАТЬЮ</a></li>
+                    <li><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">РЕГИСТРАЦИЯ</a></li>
+                    <li><a href="#">ВОЙТИ</a></li>
+                </ul>
     </header>
     <main>
         <div class="feed">

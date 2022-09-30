@@ -1,11 +1,5 @@
 from django.db import models
 
-class Author(models.Model):
-    nickname = models.CharField(max_length=50, verbose_name='Автор')
-    slug = models.SlugField(max_length=50, verbose_name='Slug', unique=True)
-
-    def __str__(self):
-        return self.nickname
 
 class Category(models.Model):
     title = models.CharField(max_length=50, verbose_name='Название категории')
@@ -18,7 +12,6 @@ class Post(models.Model):
     title = models.CharField(max_length=50, verbose_name='Название статьи')
     slug = models.SlugField(max_length=50, unique=True)
     created_at = models.TimeField(auto_now=True, verbose_name='Дата создания')
-    author = models.ForeignKey(Author, on_delete=models.PROTECT, verbose_name='Автор')
     content = models.TextField(verbose_name='Содержание')
     picture = models.ImageField(upload_to='media/postimg', verbose_name='Фото')
     category = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name='Категория')
